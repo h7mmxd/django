@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #e63946;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .hero {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .hero .button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .menu-category {
+            padding: 20px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .menu-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .menu-item-details {
+            flex-grow: 1;
+            margin-left: 10px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .cart-section {
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .total-price {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Borgir</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Menu</a></li>
+                <li><a href="/cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="cart-section">
+            <h2>Your Order</h2>
+            <div class="cart-item">
+                <p>Classic Burger x1</p>
+                <p>$12.99</p>
+            </div>
+            <div class="cart-item">
+                <p>Fries x1</p>
+                <p>$3.99</p>
+            </div>
+            <div class="cart-item">
+                <p>Soft Drink x2</p>
+                <p>$4.50</p>
+            </div>
+            <div class="total-price">
+                <p>Total: $21.48</p>
+            </div>
+            <button class="submit-order">Submit Order</button>
+        </section>
+    </main>
+</body>
+</html>
